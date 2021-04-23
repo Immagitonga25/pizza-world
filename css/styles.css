@@ -3,23 +3,49 @@
     overflow: hidden;
 }
 .topnav a {
-    color: green;
-    float: right;
-    padding-bottom: 10px; 
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 0px;
+    color: green;;
     font-size: 25px;
+}
+.col-md-3 {
+    text-align: center;
+    padding: 10px ;
 }
 .topnav h1 {
     font-weight: bold;
     font-size: 40px;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    padding-left: 20px;
     color: yellow;
 }
 .topnav a:hover {
     cursor: pointer;
     color: red;
+}
+.header {
+    font-weight: bold;
+    color: greenyellow;
+}
+.slogan {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 0px;
+
+}
+#icon {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+.about {
+    text-align: center;
+    padding-bottom: 120px;
+}
+.home {
+    color: white;
+    background-image: url(../images/pizza3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#aboutus {
+    font-weight: bold;
+    color:greenyellow;
 }
