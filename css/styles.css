@@ -31,19 +31,23 @@
 }
 #icon {
     text-align: center;
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 70px;
 }
 .about {
     text-align: center;
-    padding-bottom: 130px;
+    padding-bottom: 80px;
 }
 .home {
-    color: white;
+    color: wheat;
+    font-style: oblique;
+    font-weight: bold;
     background-image: url(../images/pizza3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
+    padding: 40px;
+    
 
 }
 #aboutus {
