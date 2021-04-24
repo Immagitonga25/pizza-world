@@ -47,8 +47,6 @@
     background-position: center;
     background-size: 100% 100%;
     padding: 40px;
-    
-
 }
 #aboutus {
     font-weight: bold;
@@ -63,4 +61,51 @@
     margin-bottom: 0px;
     margin-top: 0px;
     padding: 15px 0px;
+}
+.contact {
+    background-color: grey;
+    padding: 15px;
+    
+}
+#contact {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    padding-bottom: 10px;
+    text-decoration: underline;
+   
+}
+#contact-name {
+    width: 10cm;
+    border-radius: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+}
+#contact-email {
+    width: 10cm;
+    border-radius: 0px;
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+}
+#contact-message {
+    border-radius: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inquire {
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.col-md-1:hover {
+    opacity: 0.4;
+    cursor: pointer;
 }
