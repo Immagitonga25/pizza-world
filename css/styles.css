@@ -109,3 +109,11 @@
     opacity: 0.4;
     cursor: pointer;
 }
+.btn {
+    background-color: chartreuse;
+    color: black;
+    margin-top: 15px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
