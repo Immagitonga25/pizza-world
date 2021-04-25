@@ -132,9 +132,30 @@
           <div class="form-group">
           <input type="number" id="quantity" placeholder="Quantity" class="form-control">
           </div>
+          <div class="form-group">
+            <p class="deliveryoption">Select delivery option</p>
+            <select class="form-control" id="deliveryoption">
+              <option value="delivery">Delivery</option>
+              <option value="delivery">Pick-up</option>
+            </select>
+          </div>
           <input type="submit" value="Order" id="orderbtn">
         </form>
       </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Pizza</th>
+            <th scope="col">Size</th>
+            <th scope="col">Crust</th>
+            <th scope="col">Toppings</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Delivery</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
     <div id="contact">
       <h2 class="contact">Contact Us</h2>
