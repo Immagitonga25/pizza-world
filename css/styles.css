@@ -38,7 +38,7 @@
     text-align: center;
     padding-bottom: 80px;
 }
-.home {
+#home {
     color: wheat;
     font-style: oblique;
     font-weight: bold;
@@ -62,12 +62,18 @@
     margin-top: 0px;
     padding: 15px 0px;
 }
-.contact {
+.deliveryinfo {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+#contact {
     background-color: grey;
     padding: 15px;
     
 }
-#contact {
+.contact {
     text-align: center;
     font-weight: bold;
     color: red;
