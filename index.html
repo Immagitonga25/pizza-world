@@ -97,7 +97,7 @@
         <h2>Order Below</h2>
         <form>
           <div class="form-group">
-            <select name="pizzatype" id="pizza">
+            <select name="pizzatype" id="pizza" class="form-control">
               <option value="pizza">Select pizza type</option>
               <option value="pepperoni">Pepperoni</option>
               <option value="hawaiian">Hawaiian</option>
@@ -106,7 +106,7 @@
             </select>
           </div>
           <div class="form-group">
-            <select name="sizes" id="pizzasize">
+            <select name="sizes" id="pizzasize" class="form-control">
               <option value="size">Select pizza size</option>
               <option value="small">Small</option>
               <option value="medium">Medium</option>
@@ -114,7 +114,7 @@
             </select>
           </div>
           <div class="form-group">
-            <select name="crust" id="pizzacrust">
+            <select name="crust" id="pizzacrust" class="form-control">
               <option value="crust">Select crust</option>
               <option value="crispy">Crispy</option>
               <option value="stuffed">Stuffed</option>
@@ -122,13 +122,17 @@
             </select>
           </div>
           <div class="form-group">
-            <select name="topping" id="toppings">
+            <select name="topping" id="toppings" class="form-control">
               <option value="topping">Extra toppings</option>
               <option value="sauce">BBQ Sauce</option>
               <option value="bacon">Bacon</option>
               <option value="cheese">Cheese</option>
             </select>
           </div>
+          <div class="form-group">
+          <input type="number" id="quantity" placeholder="Quantity" class="form-control">
+          </div>
+          <input type="submit" value="Order" id="orderbtn">
         </form>
       </div>
     </div>
