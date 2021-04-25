@@ -1,14 +1,18 @@
 .topnav {
     background-color: black;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .topnav a {
     color: green;;
     font-size: 25px;
-}
-.col-md-3 {
+    float: left;
+    display: block;
     text-align: center;
-    padding: 10px ;
+    padding: 10px 16px;
+    text-decoration: none;
 }
 .topnav h1 {
     font-weight: bold;
@@ -31,12 +35,12 @@
 }
 #icon {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 70px;
 }
 .about {
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
 }
 #home {
     color: wheat;
@@ -47,10 +51,15 @@
     background-position: center;
     background-size: 100% 100%;
     padding: 40px;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 #aboutus {
     font-weight: bold;
     color:greenyellow;
+}
+#order {
+    margin-top: 0px;
 }
 .prices {
     text-align: center;
@@ -60,7 +69,8 @@
     background-color:lightgray;
     margin-bottom: 0px;
     margin-top: 0px;
-    padding: 15px 0px;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 .deliveryinfo {
     text-align: center;
@@ -71,6 +81,7 @@
 #contact {
     background-color: grey;
     padding: 15px;
+    margin-top: 0px;
     
 }
 .contact {
