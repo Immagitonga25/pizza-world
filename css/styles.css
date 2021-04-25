@@ -77,6 +77,61 @@
     font-weight: bold;
     color: black;
     font-size: 20px;
+;
+}
+.order {
+    background-color: lightgray;
+    padding-bottom: 20px;
+
+}
+#orderbtn {
+    text-align: center;
+}
+#pizza {
+    width: 15cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pizzasize {
+    width: 15cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pizzacrust {
+    width: 15cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#toppings {
+    width: 15cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#quantity {
+    width: 15cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#orderbtn {
+    background-color: chartreuse;
+    color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.below {
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 #contact {
     background-color: grey;
