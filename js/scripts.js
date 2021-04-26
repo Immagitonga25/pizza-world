@@ -1,11 +1,4 @@
-//Business logic
-// var pizza = $("#pizza option:selected").val();
-// console.log(pizza);
-// var size = $("#pizzasize option:selected").val();
-// var crust = $("#pizzacrust option:selected").val();
-// var toppings = $("#toppings option:selected").val();
-// var quantity = parseInt($("#quantity option:selected").val());
-// var delivery = $("#deliveryoption option:selected").val();
+
 
 //User interface logic
 $(document).ready(function () {
@@ -65,7 +58,7 @@ $(document).ready(function () {
         totalPrice = totalPrice + 250;
         break;
     }
-    // totalPrice = totalPrice * quantity
+     var totalPrice = totalPrice * quantity
     console.log(totalPrice);
 
     //delivery prompt
@@ -100,6 +93,7 @@ $(document).ready(function () {
       delivery +
       "</td>" +
       "<td>" +
+      totalPrice +
       "</td></tr>"
    );
   });
