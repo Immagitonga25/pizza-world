@@ -1,5 +1,3 @@
-
-
 //User interface logic
 $(document).ready(function () {
   $("form#placeorder").submit(function (event) {
@@ -58,7 +56,7 @@ $(document).ready(function () {
         totalPrice = totalPrice + 250;
         break;
     }
-     var totalPrice = totalPrice * quantity
+    var totalPrice = totalPrice * quantity;
     console.log(totalPrice);
 
     //delivery prompt
@@ -73,28 +71,36 @@ $(document).ready(function () {
       alert("Pick up your order from the restaurant.");
     }
 
-  $("tbody#checkout").append(
-    "<tr><td>" +
-      pizza +
-      "</td>" +
-      "<td>" +
-      size +
-      "</td>" +
-      "<td>" +
-      crust +
-      "</td>" +
-      "<td>" +
-      toppings +
-      "</td>" +
-      "<td>" +
-      quantity +
-      "</td>" +
-      "<td>" +
-      delivery +
-      "</td>" +
-      "<td>" +
-      totalPrice +
-      "</td></tr>"
-   );
+    $("tbody#checkout").append(
+      "<tr><td>" +
+        pizza +
+        "</td>" +
+        "<td>" +
+        size +
+        "</td>" +
+        "<td>" +
+        crust +
+        "</td>" +
+        "<td>" +
+        toppings +
+        "</td>" +
+        "<td>" +
+        quantity +
+        "</td>" +
+        "<td>" +
+        delivery +
+        "</td>" +
+        "<td>" +
+        totalPrice +
+        "</td></tr>"
+    );
+  });
+  $(".contact-info form").submit(function (event) {
+    event.preventDefault();
+    var contactName = $("input#contact-name").val();
+    var contactEmail = $("input#contact-email").val();
+    var contactMessage =$("textarea#contact-message").val();
+    alert(contactName + ", we have recieved your message. Thank you for contacting us."
+    );
   });
 });
