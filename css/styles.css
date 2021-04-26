@@ -201,3 +201,6 @@
     margin-right: auto;
     margin-left: auto;
 }
+@media screen and (max-width: 600px) {
+    
+}

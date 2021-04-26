@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza World</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -85,8 +86,8 @@
           <tr>
             <th scope="row">Price:</th>
             <td>Ksh. 50</td>
-            <td>Ksh. 50</td>
-            <td>Ksh. 50</td>
+            <td>Ksh. 100</td>
+            <td>Ksh. 150</td>
           </tr>
         </tbody>
       </table>
@@ -95,7 +96,7 @@
       </div>
       <div class="order">
         <h2 class="below">Order Below</h2>
-        <form>
+        <form id="placeorder">
           <div class="form-group">
             <select name="pizzatype" id="pizza" class="form-control">
               <option value="pizza">Select pizza type</option>
@@ -154,7 +155,11 @@
             <th scope="col">Total</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr id="checkout">
+
+          </tr>
+        </tbody>
       </table>
     </div>
     <div id="contact">
