@@ -1,11 +1,12 @@
 //Business logic
-function Price(pizza, size, crust, toppings, quantity,delivery) {
+function Checkout(pizza, size, crust, toppings, quantity,delivery,total) {
     this.pizzaType = pizza;
     this.pizzaSize = size
     this.pizzaCrust = crust;
     this.pizzaToppings = toppings;
     this.quantity = quantity;
     this.delivery = delivery;
+    this.total = total;
 }
 
 
@@ -16,11 +17,73 @@ function Price(pizza, size, crust, toppings, quantity,delivery) {
 $(document).ready(function(){
     $("form#placeorder").submit(function(event){
         event.preventDefault();
+        
         var pizza = $("#pizza option:selected").val();
         var size = $("#pizzasize option:selected").val();
         var crust = $("#pizzacrust option:selected").val();
         var toppings = $("#toppings option:selected").val();
-        var quantity = $("#quantity option:selected").val();
+        var quantity = parseInt($("#quantity option:selected").val());
         var delivery = $("#deliveryoption option:selected").val();
+
+
+        var price,totalPrice
+        switch(size) {
+            case size = "small":
+                price = 500;
+                if (toppings === "sauce") {
+                    totalPrice = price + 50;
+                } else if (toppings === "bacon") {
+                    totalPrice = price + 100;
+                } else {
+                    totalPrice = price +150;
+                }
+                break;
+            case size = "medium":
+                price = 800;
+                if (toppings === "sauce") {
+                    totalPrice = price + 50;
+                } else if (toppings === "bacon") {
+                    totalPrice = price + 100;
+                } else {
+                    totalPrice = price +150;
+                }
+                break;
+            case size = "large":
+                price = 1000;
+                if (toppings === "sauce") {
+                    totalPrice = price + 50;
+                } else if (toppings === "bacon") {
+                    totalPrice = price + 100;
+                } else {
+                    totalPrice = price +150;
+                }
+                break;
+
+        }
+        switch(crust) {
+            case crust = "crispy":
+                totalPrice = totalPrice + 100;
+            break;
+            case crust = "stuffed":
+                totalPrice = totalPrice + 200;
+            break;
+            case crust = "gluten-free":
+                totalPrice = totalPrice + 250;
+            break;
+                
+        }
+        var totalPrice = totalPrice * quantity
+
+        
+        //delivery prompt
+        if (delivery === "delivery") {
+            var location = prompt ("Enter delivery location: ");
+            alert("Your order will be delivered at " + location + ". Kindly pay the rider Ksh 200 on arrival.");
+        } else {
+            alert("Pick up your order from the restaurant.");
+        }
+        
+   
+
     })
 })
